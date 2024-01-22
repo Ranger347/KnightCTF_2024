@@ -1,0 +1,8 @@
+fetch('http://66.228.53.87:8989/', {
+      credentials: 'include',
+      method: 'POST',
+      headers: {'Content-Type': 'application/json', },
+      body: JSON.stringify(sampledata),
+
+      }).then(result => console.log('success====:', result))
+        .catch(error => console.log('error============:', error));
